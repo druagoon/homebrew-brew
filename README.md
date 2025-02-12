@@ -1,15 +1,15 @@
-# homebrew-icli
+# homebrew-brew
 
 ## How do I install these formulae?
 
-`brew install druagoon/icli/<formula>`
+`brew install druagoon/brew/<formula>`
 
-Or `brew tap druagoon/icli` and then `brew install <formula>`.
+Or `brew tap druagoon/brew` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "druagoon/icli"
+tap "druagoon/brew"
 brew "<formula>"
 ```
 
