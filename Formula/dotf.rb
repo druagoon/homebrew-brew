@@ -5,6 +5,13 @@ class Dotf < Formula
   sha256 "591a637c4ee8a2dcd9a7b6cacf0d1a6012e555eaacde8f9f134efe02b191befc"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/druagoon/homebrew-brew/releases/download/dotf-1.0.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "946240163f14af6b708afcd894368c5c1a390527b0de6d40e2c9d0d11a2d4eb0"
+    sha256 cellar: :any_skip_relocation, ventura:       "c367645ee1a6d5c1caed3a0650f8aeda7025166c9937a0983d7ce98ff30b33fb"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "4df59bafa516bcd09dfe4826c78754f5e8cbc8eaf836939e80d9519a1814a666"
+  end
+
   depends_on "gawk"
   depends_on "git-ignore"
   depends_on "gnu-sed"
