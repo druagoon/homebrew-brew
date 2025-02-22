@@ -36,3 +36,6 @@ jobs:
         env:
           BRANCH: ${{ github.event.pull_request.head.ref }}
         run: git push --delete origin "$BRANCH"
+
+      - name: Fix git tag commit
+        run: bash .github/workflows/scripts/fix-git-tag-commit.sh
