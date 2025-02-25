@@ -1,8 +1,8 @@
 class Dotf < Formula
   desc "Lightweight and flexible bash tool for managing dotfiles efficiently"
   homepage "https://github.com/druagoon/dotf"
-  url "https://github.com/druagoon/dotf/releases/download/v1.0.0/dotf-v1.0.0.tar.gz"
-  sha256 "591a637c4ee8a2dcd9a7b6cacf0d1a6012e555eaacde8f9f134efe02b191befc"
+  url "https://github.com/druagoon/dotf/releases/download/v1.1.0/dotf-v1.1.0.tar.gz"
+  sha256 "e944dbe45cfc4dd2648d98567233ad2d5adeff37cf1a667f9281e7c7d4233426"
   license "MIT"
 
   bottle do
@@ -16,7 +16,6 @@ class Dotf < Formula
   depends_on "git-ignore"
   depends_on "gnu-sed"
   depends_on "stow"
-  depends_on "wget"
 
   def install
     bin.install Dir["bin/*"]
