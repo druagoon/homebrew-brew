@@ -6,10 +6,10 @@ class Dotf < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/druagoon/homebrew-brew/releases/download/dotf-1.1.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "a00cc404cb8112e8832c06edf7fb26eb9992cad05163181f47b251269d2d35cd"
-    sha256 cellar: :any_skip_relocation, ventura:       "279d31fe91d751764f23dd2e219d8c80d24e3ee8096c5627e511a8a0ad206c15"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "95b076d90cd159939b22025f42537c68fe2a0d29a2fc196d75efa93253290119"
+    root_url "https://github.com/druagoon/homebrew-brew/releases/download/dotf-1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "9c095a2eb693d2c5016092d1927d504a4b467f2cf4ead30493eae1e65538b23d"
+    sha256 cellar: :any_skip_relocation, ventura:       "b51e4ef192628411b2c1ca5650e72bd9a2f3264ca2047431987a1ddd5a6157ef"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "301d1ac8ed4c603477b524b78e8a13467b92473db95b45a04b1237a61edc7109"
   end
 
   depends_on "gawk"
