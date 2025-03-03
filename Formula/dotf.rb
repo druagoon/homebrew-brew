@@ -19,7 +19,7 @@ class Dotf < Formula
 
   def install
     bin.install Dir["bin/*"]
-
+    man.install Dir["contrib/man/*"]
     bash_completion.install "contrib/completions/bash/dotf"
     fish_completion.install "contrib/completions/fish/dotf.fish"
     zsh_completion.install "contrib/completions/zsh/_dotf"
