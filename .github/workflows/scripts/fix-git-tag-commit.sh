@@ -6,8 +6,13 @@
 
 set -e
 
+BRANCH="master"
+
+# Checkout to master branch
+git checkout "${BRANCH}"
+
 # Pull the latest changes including tags from the remote repository
-git pull --tags
+git pull --tags origin "${BRANCH}"
 
 # Get the latest tag
 LATEST_TAG="$(git describe --tags --abbrev=0)"
