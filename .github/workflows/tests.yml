@@ -1,11 +1,11 @@
 name: brew test-bot
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - Formula/*.rb
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - Formula/*.rb
   pull_request:
 
 jobs:
