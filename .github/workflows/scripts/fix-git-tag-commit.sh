@@ -6,23 +6,30 @@
 
 set -e
 
-BRANCH="master"
+error() {
+    printf "\033[31mError: $1\033[0m\n"
+}
 
 # Checkout to master branch
-git checkout "${BRANCH}"
+git checkout master
 
 # Pull the latest changes including tags from the remote repository
-git pull --tags origin "${BRANCH}"
+git fetch --tags origin
 
 # Get the latest tag
-LATEST_TAG="$(git describe --tags --abbrev=0)"
+LATEST_TAG="$(curl -fsSL https://api.github.com/repos/druagoon/homebrew-brew/releases/latest | jq -r '.tag_name // ""')"
+
+if [[ -z "${LATEST_TAG}" ]]; then
+    error "Could not retrieve the latest tag name"
+    exit 1
+fi
 
 # Get the latest commit hash
 LATEST_COMMIT="$(git rev-parse HEAD)"
 
-# Ensure the tag and commit hash exist
-if [[ -z "${LATEST_TAG}" || -z "${LATEST_COMMIT}" ]]; then
-    echo "Error: Could not retrieve the latest tag or commit hash."
+# Ensure the latest commit hash exist
+if [[ -z "${LATEST_COMMIT}" ]]; then
+    error "Could not retrieve the latest commit hash"
     exit 1
 fi
 
@@ -34,7 +41,7 @@ echo "Latest tag commit: ${LATEST_TAG_COMMIT}"
 echo "Latest commit: ${LATEST_COMMIT}"
 
 if [[ "${LATEST_TAG_COMMIT}" == "${LATEST_COMMIT}" ]]; then
-    echo "Tag ${LATEST_TAG} is already pointing to the latest commit."
+    echo "Tag ${LATEST_TAG} is already pointing to the latest commit"
     exit 0
 fi
 
