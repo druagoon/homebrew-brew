@@ -1,8 +1,8 @@
 class Dotf < Formula
   desc "Lightweight and flexible bash tool for managing dotfiles efficiently"
   homepage "https://github.com/druagoon/dotf"
-  url "https://github.com/druagoon/dotf/releases/download/v1.3.0/dotf-v1.3.0.tar.gz"
-  sha256 "8d3bcf6cb8b9e831b287975b9861427471118583b5d81c33cbf169c341be916a"
+  url "https://github.com/druagoon/dotf/releases/download/v1.3.1/dotf-v1.3.1.tar.gz"
+  sha256 "bc28671eabdf76bdadfe970090749ff751c3fe43cd1d969b034e765fa50f4b74"
   license "MIT"
 
   bottle do
