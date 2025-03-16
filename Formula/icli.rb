@@ -6,10 +6,10 @@ class Icli < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/druagoon/homebrew-brew/releases/download/icli-1.3.0"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5635a98df485036804dbf67e551fa53e4b53543a59dcde2ac9c81327cd9cb5c5"
-    sha256 cellar: :any_skip_relocation, ventura:       "2eea215c9e9aa4ac26edfcbe114ef2cf1b04e970506d5fbe34a770bee985862c"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "75507b35263d79b0d13d2572426253cde4269137fde73ac88318ac2ac42ea146"
+    root_url "https://github.com/druagoon/homebrew-brew/releases/download/icli-1.3.1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "d51a13dc2fcd24e1b41725a8c7dea6b23188d2de486d1b550ec0989f837985ad"
+    sha256 cellar: :any_skip_relocation, ventura:       "9ea0b3acb9ebc775425720c8b06a2d195ab6429509a1d4c8312a51d9847d97e0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "c3daee142955ef4c0532dacdae96f1d6c4695499df68f1245a47486b540a3fd1"
   end
 
   depends_on "rust" => :build
