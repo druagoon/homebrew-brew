@@ -1,8 +1,8 @@
 class Icli < Formula
   desc "Personal command-line tool includes various commonly used utilities"
   homepage "https://github.com/druagoon/icli-rs"
-  url "https://github.com/druagoon/icli-rs/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "c92ccc9f4951234a321691dd899a21146c40c1a16b0b84988d0221d25e5a6f03"
+  url "https://github.com/druagoon/icli-rs/archive/refs/tags/v1.3.1.tar.gz"
+  sha256 "3d8298d96a9446db8c85898d684120e5f7e00bea750e6249872cbbbcc703a6e1"
   license "MIT"
 
   bottle do
