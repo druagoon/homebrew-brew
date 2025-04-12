@@ -1,8 +1,8 @@
 class Shinc < Formula
   desc "Generate a bash cli script using `argc`"
   homepage "https://github.com/druagoon/shinc-rs"
-  url "https://github.com/druagoon/shinc-rs/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "9ee12db1bab89bcf020e0699d661228e2a98a0b6b7b77fc4b8e8d5bd8e62262c"
+  url "https://github.com/druagoon/shinc-rs/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "d535077c6d103d9299542d88ae28ad88593df762de8db5924d64ea24a1a46d76"
   license "MIT"
 
   bottle do
