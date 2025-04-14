@@ -1,8 +1,8 @@
 class Dotf < Formula
   desc "Lightweight and flexible bash tool for managing dotfiles efficiently"
   homepage "https://github.com/druagoon/dotf"
-  url "https://github.com/druagoon/dotf/releases/download/v1.3.1/dotf-v1.3.1.tar.gz"
-  sha256 "bc28671eabdf76bdadfe970090749ff751c3fe43cd1d969b034e765fa50f4b74"
+  url "https://github.com/druagoon/dotf/releases/download/v1.4.0/dotf-v1.4.0.tar.gz"
+  sha256 "7deb4081df76c5e41aa361dfef57e556b22f19ba0e2f0371d6f5ea42e6a8576e"
   license "MIT"
 
   bottle do
@@ -19,10 +19,12 @@ class Dotf < Formula
 
   def install
     bin.install Dir["bin/*"]
-    man.install Dir["contrib/man/*"]
-    bash_completion.install "contrib/completions/bash/dotf"
-    fish_completion.install "contrib/completions/fish/dotf.fish"
-    zsh_completion.install "contrib/completions/zsh/_dotf"
+    # Install man pages
+    man.install Dir["share/man/*"]
+    # Install bash, fish, and zsh completions
+    bash_completion.install Dir["share/completions/bash/*"]
+    fish_completion.install Dir["share/completions/fish/*"]
+    zsh_completion.install Dir["share/completions/zsh/*"]
   end
 
   test do
