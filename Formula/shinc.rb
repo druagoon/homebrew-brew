@@ -6,11 +6,11 @@ class Shinc < Formula
   license "MIT"
 
   bottle do
-    root_url "https://github.com/druagoon/homebrew-brew/releases/download/shinc-1.0.0"
-    sha256 cellar: :any,                 arm64_sequoia: "2c8e198a4900200c3e00a27b26f4e4fd700d8a3cd7eacb0859473459a219180f"
-    sha256 cellar: :any,                 arm64_sonoma:  "32302026c0255f1892fa2a7354b1098d44e668e0ddd04959cf258bda5b198c96"
-    sha256 cellar: :any,                 ventura:       "677fe80a9e4ebab3b2d0e172472e4fb58f48b5c14449c3054711dfd6822693ba"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b5c5d833e116a46451d744310d7e6460c4b738d4cae66c534a717775e1aca5d2"
+    root_url "https://github.com/druagoon/homebrew-brew/releases/download/shinc-1.1.0"
+    sha256 cellar: :any,                 arm64_sequoia: "e7e040e48dc1d157bbda3a68a1bd7e1a7cb650095596fdee44078a2ef071ac46"
+    sha256 cellar: :any,                 arm64_sonoma:  "33950e164bd81bcb2390a11437bac06392cc826ff47f24ea80865171a279911d"
+    sha256 cellar: :any,                 ventura:       "53f612e7d833b792f6788b484a3754f073d16b4b41de2299c68d3d6d906ca16e"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "d4f9ede33a6bf1878242ff0046436a5079a7b9c6ea6dab68aae3239b6070e62e"
   end
 
   depends_on "rust" => :build
